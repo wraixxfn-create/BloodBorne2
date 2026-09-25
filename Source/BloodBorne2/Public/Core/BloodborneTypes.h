@@ -33,23 +33,6 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnLocalizedNotification, AActor*, 
 #define ECC_BB_TARGETING ECC_GameTraceChannel1
 #define ECC_BB_INTERACTION ECC_GameTraceChannel2
 
-/** Objects implementing this contract are eligible lock-on candidates. */
-UINTERFACE(MinimalAPI, Blueprintable, meta=(DisplayName="Bloodborne Lock-On Target"))
-class UBloodborneTargetable : public UInterface
-{
-    GENERATED_BODY()
-};
-
-class IBloodborneTargetable
-{
-    GENERATED_BODY()
-
-public:
-    /** World-space point the lock-on camera frames and quicksteps orbit around. */
-    UFUNCTION(BlueprintNativeEvent, BlueprintPure, Category="Targeting")
-    FVector GetTargetLockFocusLocation() const;
-
-    /** Gameplay veto, e.g. phased-out, dying, or off-screen boss states. */
-    UFUNCTION(BlueprintNativeEvent, BlueprintPure, Category="Targeting")
-    bool CanBeLockedOn(AActor* RequestingActor) const;
-};
+// The lock-on target contract (IBloodborneTargetable / UBloodborneTargetable)
+// is declared once in Targeting/BloodborneTargetable.h; do not re-declare it
+// here or UHT will fail with a duplicate engine name.
