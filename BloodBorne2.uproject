@@ -1,0 +1,9 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.3",
+  "Category": "Games",
+  "Description": "A modular dark fantasy action RPG.",
+  "Modules": [
+    { "Name": "BloodBorne2", "Type": "Runtime", "LoadingPhase": "Default" }
+  ]
+}

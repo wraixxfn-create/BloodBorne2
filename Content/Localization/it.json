@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "language_name": "Italiano"
+  },
+  "ui": {
+    "interact": "Interagisci",
+    "examine": "Esamina",
+    "open": "Apri",
+    "close": "Chiudi",
+    "take": "Raccogli",
+    "confirm": "Conferma",
+    "cancel": "Annulla"
+  },
+  "interactables": {
+    "clinic_door": {
+      "name": "Porta di legno consunta",
+      "locked": "Chiusa dall'altro lato"
+    },
+    "operating_table": {
+      "name": "Tavolo operatorio consunto",
+      "description": "Le cinghie di cuoio sono ancora calde."
+    },
+    "clinic_window": {
+      "name": "Alta finestra ad arco",
+      "description": "Una luna pallida incombe su Yharnam."
+    }
+  },
+  "notes": {
+    "paleblood_scribble": {
+      "title": "Scarabocchio scritto a mano",
+      "body": "Cerca il Sangue pallido per trascendere la caccia"
+    },
+    "clinic_warning": {
+      "title": "Nota macchiata di sangue",
+      "body": "Non aprire la porta. La bestia non si è ancora nutrita."
+    }
+  },
+  "items": {
+    "blood_vial": {
+      "name": "Fiala di sangue",
+      "description": "Ripristina una parte della salute."
+    },
+    "clinic_key": {
+      "name": "Chiave della clinica",
+      "description": "Una piccola chiave di ferro con un lieve odore di medicinale."
+    }
+  }
+}
