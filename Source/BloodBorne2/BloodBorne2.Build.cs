@@ -7,7 +7,7 @@ public class BloodBorne2 : ModuleRules
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
         PublicDependencyModuleNames.AddRange(new[]
         {
-            "Core", "CoreUObject", "Engine", "InputCore", "Json", "JsonUtilities"
+            "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "Json", "JsonUtilities"
         });
 
         // Keep JSON editable at runtime and include it in packaged builds.

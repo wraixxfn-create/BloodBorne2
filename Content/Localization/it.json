@@ -11,6 +11,27 @@
     "confirm": "Conferma",
     "cancel": "Annulla"
   },
+  "hud": {
+    "target_locked": "Bersaglio agganciato",
+    "target_unlocked": "Bersaglio sganciato",
+    "lock_on_no_target": "Nessun bersaglio in portata",
+    "lock_on_lost_target": "Bersaglio perso",
+    "stamina_depleted": "Vigore esaurito",
+    "sprinting": "Scatto in corso",
+    "exhausted": "Sfinito"
+  },
+  "gameplay": {
+    "movement_state": {
+      "normal": "Normale",
+      "rolling": "Capriola",
+      "dashing": "Passo rapido",
+      "stunned": "Stordito"
+    },
+    "dodge": {
+      "roll": "Capriola",
+      "quickstep": "Passo rapido"
+    }
+  },
   "interactables": {
     "clinic_door": {
       "name": "Porta di legno consunta",
