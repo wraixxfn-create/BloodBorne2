@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "language_name": "English"
+  },
+  "ui": {
+    "interact": "Interact",
+    "examine": "Examine",
+    "open": "Open",
+    "close": "Close",
+    "take": "Take",
+    "confirm": "Confirm",
+    "cancel": "Cancel"
+  },
+  "interactables": {
+    "clinic_door": {
+      "name": "Worn Wooden Door",
+      "locked": "Locked from the other side"
+    },
+    "operating_table": {
+      "name": "Worn Operating Table",
+      "description": "The leather restraints are still warm."
+    },
+    "clinic_window": {
+      "name": "Tall Arched Window",
+      "description": "A pale moon hangs over Yharnam."
+    }
+  },
+  "notes": {
+    "paleblood_scribble": {
+      "title": "Handwritten Scribble",
+      "body": "Seek Paleblood to transcend the hunt"
+    },
+    "clinic_warning": {
+      "title": "Blood-stained Note",
+      "body": "Do not open the door. The beast has not fed."
+    }
+  },
+  "items": {
+    "blood_vial": {
+      "name": "Blood Vial",
+      "description": "Restores a portion of health."
+    },
+    "clinic_key": {
+      "name": "Clinic Key",
+      "description": "A small iron key smelling faintly of medicine."
+    }
+  }
+}
