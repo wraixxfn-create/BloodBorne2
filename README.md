@@ -48,10 +48,12 @@ Generated Unreal folders (`Binaries`, `Intermediate`, `Saved`, and `DerivedDataC
 
 ## Open and build
 
-1. Install UE 5.3 or update `EngineAssociation` and target `IncludeOrderVersion` together for the team engine version.
+1. Install UE 5.3 or newer and let the editor update `EngineAssociation` when it prompts to switch versions.
 2. Right-click `BloodBorne2.uproject` and generate project files (or run the platform-specific Unreal project generator).
 3. Build the `BloodBorne2Editor` Development target.
 4. Open the project and create `/Game/BloodBorne2/Maps/Clinic_Sickroom`.
+
+Both `Source/BloodBorne2.Target.cs` and `Source/BloodBorne2Editor.Target.cs` set `DefaultBuildSettings = BuildSettingsVersion.Latest`. Targets share build products with the precompiled engine binaries, so Unreal Build Tool aborts if any shared property differs from the engine's own values (`"<Target> modifies the values of properties: [ UndefinedIdentifierWarningLevel: Off != Error, ... ] ... has build products in the shared area"`). Newer engines raise those warning levels from `Off` to `Error` (`BuildSettingsVersion.V6` in 5.7, `V7` in 5.8; `V4` in 5.3 still leaves them `Off`), so pinning an older version breaks the build on a newer engine. `Latest` tracks whichever engine the team opens the project with; pin it explicitly (`V4`/`V5`/`V6`/`V7`) plus `IncludeOrderVersion` when standardising on one release. `BuildEnvironment = TargetBuildEnvironment.Unique` is not an option for launcher-installed engines — it applies to source builds only.
 
 The Build.cs runtime dependencies and packaging setting stage both JSON files as loose Non-UFS content, allowing the runtime loader to use `ProjectContentDir()/Localization`. If localization files are moved, update both locations.
 
