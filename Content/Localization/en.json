@@ -11,6 +11,27 @@
     "confirm": "Confirm",
     "cancel": "Cancel"
   },
+  "hud": {
+    "target_locked": "Target Locked",
+    "target_unlocked": "Target Unlocked",
+    "lock_on_no_target": "No target in range",
+    "lock_on_lost_target": "Target lost",
+    "stamina_depleted": "Stamina Depleted",
+    "sprinting": "Sprinting",
+    "exhausted": "Exhausted"
+  },
+  "gameplay": {
+    "movement_state": {
+      "normal": "Normal",
+      "rolling": "Rolling",
+      "dashing": "Dashing",
+      "stunned": "Stunned"
+    },
+    "dodge": {
+      "roll": "Roll",
+      "quickstep": "Quickstep"
+    }
+  },
   "interactables": {
     "clinic_door": {
       "name": "Worn Wooden Door",
